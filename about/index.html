@@ -9,46 +9,62 @@
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
         <link rel="stylesheet" href="/css/style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@500&family=Paytone+One&display=swap" rel="stylesheet"> 
+
     </head>
     <body class="body">
     
         <div class="header">
-            <div id="headerIcon">
+            <div id="iconSection">
+                <div id="headerIcon">
                     ZK
+                </div>
+                <div id="nameBox">
+                    <div id="name"><b>Zachary Kopatch</b></div>
+                    <div id="profTitle">Front-End Developer | Full-Stack Engineer</div>
+                </div>
             </div>
             <div class="headerNav">
             <ul id="nav_list">
                 <li class="headerNav_Item" id="Home">
-                    <a href="/index.html">Home</a>
+                    <div class="headerBox">
+                        <!--<div class="headerBoxAccent"></div>-->
+                        <a href="/index.html">Home</a>
+                    </div>
                 </li>
-                <div class="nav_border">|</div>
                 <li class="headerNav_Item" id="About">
-                    <a href="/about/index.html">About</a>
+                    <div class="headerBox">
+                        <a href="/about/index.html">About</a>
+                    </div>
                 </li>
-                <div class="nav_border">|</div>
                 <li class="headerNav_Item" id="Blog">
-                    <a href="/blog/index.html">Blog</a>
+                    <div class="headerBox">
+                        <a href="/blog/index.html">Blog</a>
+                    </div>
                 </li>
-                <div class="nav_border">|</div>
                 <li class="headerNav_Item" id="Contact">
-                    <a href="/contact/index.html">Contact</a>
+                    <div class="headerBox">
+                        <a href="/contact/index.html">Contact</a>
+                    </div>
                 </li>
             </ul>
             </div>
         </div>
         <br>
-        <hr>
         
-        <div class="container">
-            <h1>About Me:</h1>
+        <div class="container_about">
+            <h1 class="title">About Me:</h1>
             <p>
-                <em>Hi, My name is Zachary Kopatch!</em> I am a creative and innovative thinker that enjoys solving complex puzzles and creating unique user experiences. I have a background working in Enterprise MES software development, with experience across the stack in terms of development. These days I find myself mostly working in JavaScript and C#, although I am always enthusiastic about exploring with new tools and languages. If you are looking for a Software Developer with a Systems-thinking approach and an eye for design, then you have come to the right page!
+                <em>Hi, My name is Zachary Kopatch!</em>
+                <br><br>
+                I am a creative and innovative thinker that enjoys solving complex puzzles and creating unique user experiences. I have a background working in Enterprise MES software development, with experience across the stack in terms of development. These days I find myself mostly working in JavaScript and C#, although I am always enthusiastic about exploring with new tools and languages. If you are looking for a Software Developer with a Systems-thinking approach and an eye for design, then you have come to the right page!
             </p>
+        </div>
         
         <br><br>
-        <hr>
         <caption>email: zkopatch@gmail.com</caption>
                 
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="javascript/app.js"></script>
     </body>
 </html>

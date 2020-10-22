@@ -9,52 +9,83 @@
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
         <link rel="stylesheet" href="css/style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@500&family=Paytone+One&family=Mrs+Sheppards&display=swap" rel="stylesheet"> 
     </head>
     <body class="body">
-    
+       
+        
         <div class="header">
-            <div id="headerIcon">
+            <div id="iconSection">
+                <div id="headerIcon">
                     ZK
+                </div>
+                <div id="nameBox">
+                    <div id="name"><b>Zachary Kopatch</b></div>
+                    <div id="profTitle">Front-End Developer | Full-Stack Engineer</div>
+                </div>
             </div>
             <div class="headerNav">
             <ul id="nav_list">
-                <li class="headerNav_Item" id="Home">
-                    <a href="/index.html">Home</a>
+                <li class="headerNav_Item" id="HomeNav">
+                    <div class="headerBox">
+                        <a href="/index.html">Home</a>
+                        <!--<div class="headerBoxAccent"></div>-->
+                    </div>
                 </li>
-                <div class="nav_border">|</div>
                 <li class="headerNav_Item" id="About">
-                    <a href="/about/index.html">About</a>
+                    <div class="headerBox">
+                        <a href="/about/index.html">About</a>
+                    </div>
                 </li>
-                <div class="nav_border">|</div>
-                <li class="headerNav_Item" id="Blog">
-                    <a href="/blog/index.html">Blog</a>
-                </li>
-                <div class="nav_border">|</div>
                 <li class="headerNav_Item" id="Contact">
-                    <a href="/contact/index.html">Contact</a>
+                    <div class="headerBox">
+                        <a href="/contact/index.html">Contact</a>
+                    </div>
                 </li>
             </ul>
             </div>
         </div>
-        <br>
-        <hr>
         
-        <div class="container_home">
-            <div id="homeLeft" class="center">
-                <img id="homePhoto" class="center" src="img/Compress_PersonalPhoto.jpg" alt="Photo of Zachary Kopatch">
+        <section id="home">
+            <div class="container_home">
+                <div id="homeLeft" class="center">
+                    <p id="greeting"><br><b>Hi there,<br><br> Welcome to my page!</b></p>
+                </div>
+                <div id="homeRight" class="center">
+                    <img id="homePhoto" class="center" src="img/Profile.jpg" alt="Personal Photo">
+                </div>
             </div>
-            <div id="homeRight" class="center">
-                <p class=""><b>Hi there,<br> Welcome to my page!<br><br> I am Zachary Kopatch.</b></p>
+        </section>
+        
+        <section id="about">
+            <div class="container_about">
+                <h1 class="title">About Me:</h1>
+                <p class="aboutMe">
+                    <em>Hi, My name is Zachary Kopatch!</em>
+                    <br><br>
+                    I am a creative and innovative thinker that enjoys solving complex puzzles and creating unique user experiences. I have a background working in Enterprise MES software development, with experience across the stack in terms of development. These days I find myself mostly working in JavaScript and C#, although I am always enthusiastic about exploring with new tools and languages. If you are looking for a Software Developer with a Systems-thinking approach and an eye for design, then you have come to the right page!
+                </p>
             </div>
-        </div>
+        </section>
+        
+        <section id="contact">
+            <div class="container_contact">
+                <h1 class="title">Contact Information:</h1>
+                <br>
+                <ul>
+                    <li><span class="title titleEmail">Email:</span><a href="/contact/index.html"> zkopatch@gmail.com</a></li>
+                    <li><span class="title titleEmail">GitHub:</span><a href="https://github.com/zkopatch"> github.com/zkopatch</a></li>
+                    <li><span class="title titleEmail">LinkedIn:</span><a href="https://www.linkedin.com/in/zkopatch/">     linkedin.com/in/zkopatch/</a></li>
+                </ul>
+            </div>
+        </section>
         
         
-        <div class="container_footer">
-        <br><br>
-        <hr>
-        <caption>email: zkopatch@gmail.com</caption>
+        <div class="container_footer">        
+            <caption>website designed and created by Zachary Kopatch</caption>
         </div>
                 
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="javascript/app.js"></script>
     </body>
 </html>

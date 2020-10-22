@@ -1,85 +1,273 @@
-.body{
-    margin: 60px auto;
+/*
+Reset CSS
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+/* remember to define focus styles! */
+:focus {
+	outline: 0;
+}
+
+/* remember to highlight inserts somehow! */
+ins {
+	text-decoration: none;
+}
+del {
+	text-decoration: line-through;
+}
+
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*
+End Reset CSS
+*/
+
+.aboutMe{
+    margin: 2em 2em;
+}
+
+.bodyBackground {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0;
+    width:100px;
+    object-fit: cover;
+}
+
+body{
+    margin: 10px auto;
     width: 75%;
+    background-color: black;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: whitesmoke;
+    font-family: 'Alegreya Sans', sans-serif !important;
+}
+
+caption{
+    color: dimgray;
 }
 
 .center {
-    margin: auto;
-    width: 50%;
+  margin: auto;
+  width: 50%;
 }
 
-.container{
-    align-content: center;
-    display: inline;
-    width: 50%;
+#contact{
+    margin-bottom: 0px !important;
+    min-height: 400px !important;
 }
 
-.container_home{
-    align-content: center;
-    display: table;
-    width: 100%;
-    
+.container {
+  align-content: center;
+  display: inline;
+  width: 50%;
 }
 
-.container_footer{
-    align-content: center;
-    display: inline;
-    width: 50%;
+.container_contact{
+    margin-top: 12em;
+    margin-left: 1em;
 }
 
-.header{
-    display: inline-block;
-    margin:  5px;
-    width: 100%;
+.container_contact li a{
+    color: dimgray;
 }
 
-.headerNav{
-    display: flex;
-    float: right;
+.container_home {
+  align-content: center;
+  display: table;
+  width: 100%;
+    margin-top: 2.5em;
 }
 
-.headerNav_Item{
-    margin: 0px 10px 0px 10px;
+.container_footer {
+  align-content: center;
+    padding-top: 1em;
 }
 
-.nav_border{
-    font-size: 25px;
+#greeting{
+    display: none;
+    margin-left: 2em;
 }
 
-#headerIcon{
-    display: inline;
-    float:left !important;
-    font-family: cursive;
-    font-size: 2em;
+
+.header {
+  display: inline-flex;
+  margin: 5px;
+  width: 100%;
 }
 
-#homePhoto{
-    width: 16em;
-    height: 16em;
-}
-
-#homeLeft{
+.headerBox{
+    /*background-color: lightgrey;*/
+    height: 3em;
+    width: 6em;
     text-align: center;
-    float:left;
-    width: 50%;
+    position: relative;
+    border-bottom-style: double;
+    border-width: 1em;
 }
 
-#homeRight{
-    float: right;
-    width: 50%;
+.headerBox a{
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+    text-decoration: none;
+    color: inherit;
+    font-family: 'Paytone One', sans-serif !important;
+    font-weight: 900;
+
+}
+
+.headerBox a:hover{
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);  
+    font-family: 'Paytone One', sans-serif !important;
+}
+
+.headerBoxAccent{
+    height: 10%;
+    width: 100%;
+    text-align: center;
+    background-image: linear-gradient(350deg, dimgray,grey, green);
+}
+
+.headerNav {
+  display: inline;
+}
+
+.headerNav_Item {
+  margin: 0px 2px 0px 2px;
+}
+
+#headerIcon {
+  display: table;
+  float: left !important;
+  font-family: cursive;
+  font-size: 2em;
+    margin-right: 10px;
+    /*background-color: dimgray;*/
+    padding: 10px 5px;
+    border-radius: 10em;
+     background-image: linear-gradient(360deg, grey, #00e600);
+    border-style: solid;
+    border-color: white;
+    border-width: medium;
+}
+
+#home{
+    margin-top: 50px;
+}
+
+#homePhoto {
+  width: 16em;
+  height: 16em;
+    border-radius: 10em;
+    border-style: double;
+    border-width: 1em;
+}
+
+#homeLeft {
+  float: left;
+  width: 50%;
     font-size: 1.5em;
 }
 
-#nav_list{
-    display: flex;
-    margin: 10px;
+#homeRight {
+  float: right;
+  width: 50%;
+    text-align: center;
 }
 
-p, ul {
-    color: #333;
-    font-size: 1.5em;
-    line-height: 1.4em;
-    color: #333;
-    list-style-type: none;
+#iconSection{
+    display: inline-flex;
+    float: left;
+    align-items: center;
+    width: 75%;
 }
 
+#main{
+}
+
+#name{
+    font-size: 1.75em;
+    padding:  .2em 0em;
+    font-family: 'Paytone One', sans-serif !important;
+}
+
+.nav_border {
+  font-size: 25px;
+}
+
+#nav_list {
+  display: flex;
+  margin: 10px;
+}
+
+#profTitle{
+    font-size: 1.25em;
+    color: dimgray;
+    font-family: 'Alegreya Sans', sans-serif !important;
+}
+
+p,
+ul {
+  font-size: 1.5em;
+  line-height: 1.4em;
+  list-style-type: none;
+}
+
+section{
+    min-height: 500px;
+    margin-bottom: 500px;
+}
+
+.title{
+    font-family: 'Paytone One', sans-serif !important;
+    font-size: 4em;
+}
+
+.titleEmail{
+    margin: 0em 2em;
+    font-size: 1em !important;
+}

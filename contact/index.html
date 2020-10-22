@@ -9,48 +9,60 @@
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
         <link rel="stylesheet" href="/css/style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@500&family=Paytone+One&family=Alegreya+SC:wght@900&display=swap" rel="stylesheet"> 
     </head>
     <body class="body">
     
         <div class="header">
-            <div id="headerIcon">
+            <div id="iconSection">
+                <div id="headerIcon">
                     ZK
+                </div>
+                <div id="nameBox">
+                    <div id="name"><b>Zachary Kopatch</b></div>
+                    <div id="profTitle">Front-End Developer | Full-Stack Engineer</div>
+                </div>
             </div>
             <div class="headerNav">
             <ul id="nav_list">
                 <li class="headerNav_Item" id="Home">
-                    <a href="/index.html">Home</a>
+                    <div class="headerBox">
+                        <!--<div class="headerBoxAccent"></div>-->
+                        <a href="/index.html">Home</a>
+                    </div>
                 </li>
-                <div class="nav_border">|</div>
                 <li class="headerNav_Item" id="About">
-                    <a href="/about/index.html">About</a>
+                    <div class="headerBox">
+                        <a href="/about/index.html">About</a>
+                    </div>
                 </li>
-                <div class="nav_border">|</div>
                 <li class="headerNav_Item" id="Blog">
-                    <a href="/blog/index.html">Blog</a>
+                    <div class="headerBox">
+                        <a href="/blog/index.html">Blog</a>
+                    </div>
                 </li>
-                <div class="nav_border">|</div>
                 <li class="headerNav_Item" id="Contact">
-                    <a href="/contact/index.html">Contact</a>
+                    <div class="headerBox">
+                        <a href="index.html">Contact</a>
+                    </div>
                 </li>
             </ul>
             </div>
         </div>
         <br>
-        <hr>
         
-        <div class="container">
-            <h1>Contact Information:</h1>
+        <div class="container_contact">
+            <h1 class="title">Contact Information:</h1>
             <ul>
-                <li>Email: <a href="/contact/index.html">zkopatch@gmail.com</a></li>
-                <li>GitHub: <a href="https://github.com/zkopatch">github.com/zkopatch</a></li>
-                <li>LinkedIn: <a href="https://www.linkedin.com/in/zkopatch/">linkedin.com/in/zkopatch/</a></li>
+                <li><span class="title titleEmail">Email:</span><a href="/contact/index.html"> zkopatch@gmail.com</a></li>
+                <li><span class="title titleEmail">GitHub:</span><a href="https://github.com/zkopatch"> github.com/zkopatch</a></li>
+                <li><span class="title titleEmail">LinkedIn:</span><a href="https://www.linkedin.com/in/zkopatch/"> linkedin.com/in/zkopatch/</a></li>
             </ul>
         </div>
         
         <br><br>
-        <hr>
                 
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="javascript/app.js"></script>
     </body>
 </html>
